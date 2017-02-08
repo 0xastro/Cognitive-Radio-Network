@@ -2,6 +2,8 @@
 ## This is an (Undergraduate Thesis) 
 
 This project is Developed under the GNU Radio platform and CRTS 'Cognitive Radio Test System project which is funded By Virginia Tech '.
+![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/proj_scenario_Ver1.png?raw=true)
+
 
 ### Primary Users Engine:
 This engine is dedicated to switch its operational channel by changing its center frequency:  fc.
