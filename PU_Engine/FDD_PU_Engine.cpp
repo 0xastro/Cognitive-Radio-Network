@@ -1,17 +1,17 @@
-#include "FDD_PU_Engine.hpp"
+#include "CE_FDD_PU_Engine.hpp"
 
 // constructor
-FDD_PU_Engine::FDD_PU_Engine(int argc, char **argv, ExtensibleCognitiveRadio *_ECR) {
+CE_FDD_PU_Engine::CE_FDD_PU_Engine(int argc, char **argv, ExtensibleCognitiveRadio *_ECR) {
   ECR = _ECR;
   first_execution = 1;
   period_s = 5;
 }
 
 // destructor
-FDD_PU_Engine::~FDD_PU_Engine() {}
+CE_FDD_PU_Engine::~FDD_PU_Engine() {}
 
 // execute function
-void FDD_PU_Engine::execute() {
+void CE_FDD_PU_Engine::execute() {
   
   gettimeofday(&tv, NULL);
 
