@@ -9,20 +9,26 @@ only 3 states have been specified:
 switching in a fixed pattern between channel_5, channel_4 and channel_3
 or switching between channel_2, channel_1 and channel_0
 
+### Engine Template:
+This Template compine a brief description of how to construct and build engines based on Exensible Cognitive Radio(ECR) which is provided by CRTS and LiquidDSP library for OFDM framing.
+
+### FFT Spectrum Band 700M:
+This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
+
+
 # TODO:
 1. Design our model (MLP-Multi Layer Percetron) which add the cognition feature to the Secondry users.
-2. Generate the Data set which include the main features of the Observed RF    
-3. channels[Channel_0,Channel_1,Channel_2,Channel_3,Channel_4,Channel_5]. The Meters/features will be [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
-4. Train our Model to to adjust the proper weights.
-  
+2. Generate the Data set which include the main features of the Observed RF   channels[Channel_0,Channel_1,Channel_2,Channel_3,Channel_4,Channel_5]. The Meters/features will be [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
+3. Train our Model to to adjust the proper weights.
+4. Write the MAKE FILE  
 5. Integrate the System where 5 nodes are involved: [Controller, 2 primary users, 2 secondry users, Spectrum analyzer]
 
-| Hardware        | Software And Tools       | LAB                             |
-| --------------- |:------------------------:|:-------------------------------:|
-| USRP2           |GNURadio based on python  |Remotly Access to CORNET Testbed |
-| USRP B100       |CRTS based on C++         |Cairo University Lab             |
-|                 |C programming             |                                 |
-|                 |Shell scripting           |                                 |
+| Hardware        | Software And Tools                      | LAB                             |
+| --------------- |:---------------------------------------:|:-------------------------------:|
+| USRP2           |GNURadio based on python                 |Remotly Access to CORNET Testbed |
+| USRP B100       |CRTS based on C++ and Liquid-DSP         |Cairo University Lab             |
+|                 |C programming                            |                                 |
+|                 |Shell scripting                          |                                 |
   
   
     
