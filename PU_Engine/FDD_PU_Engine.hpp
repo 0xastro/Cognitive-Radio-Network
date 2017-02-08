@@ -1,5 +1,5 @@
-#ifndef _CE_TWO_CHANNEL_DSA_PU_
-#define _CE_TWO_CHANNEL_DSA_PU_
+#ifndef _CE_FDD_PU_ENGINE_
+#define _CE_FDD_PU_ENGINE_
 
 #include <stdio.h>
 #include <sys/time.h> //system call 
@@ -7,10 +7,10 @@
 #include "cognitive_engine.hpp"
 #include "timer.h"
 
-class CE_Two_Channel_DSA_PU : public CognitiveEngine {
+class CE_FDD_PU_Engine : public CognitiveEngine {
 public:
-  CE_Two_Channel_DSA_PU(int argc, char**argv, ExtensibleCognitiveRadio *_ECR);
-  ~CE_Two_Channel_DSA_PU();
+  CE_FDD_PU_Engine(int argc, char**argv, ExtensibleCognitiveRadio *_ECR);
+  ~CE_FDD_PU_Engine();
   virtual void execute();
 
 private:
