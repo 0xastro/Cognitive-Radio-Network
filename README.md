@@ -35,6 +35,10 @@ This is designed to be executed on the USRP node which is responsible for Monito
   
     
 ##This project is Delievered as a Undergraduate Thesis in Canadian International College -CIC-
+#######ADDED
++ Presentation of the First Semester progress
++ Documentation of Project
++ Documentation Report includes the theory of CR.
 
 ####For any question, contact me:
 * m.rahm7n@gmail.com
