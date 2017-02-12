@@ -45,3 +45,7 @@ This is designed to be executed on the USRP node which is responsible for Monito
 * +20 109 111 4065
 * [facebook](https://www.facebook.com/mrxastro)
 * [LinkidIn](https://eg.linkedin.com/in/mrastro)
+
+
+#########UPDATE
+I may not be able to integrate the Artificial Inteligent algorithm, But I am going to design the a stand alone version AI and train it in offline mode based on the trainig data.
