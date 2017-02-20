@@ -5,6 +5,7 @@ This project is Developed under the GNU Radio platform and CRTS 'Cognitive Radio
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/proj_scenario_Ver1.png?raw=true)
 
 
+
 ### Primary Users Engine:
 This engine is dedicated to switch its operational channel by changing its center frequency:  fc.
 only 3 states have been specified:
@@ -17,6 +18,9 @@ This Template compine a brief description of how to construct and build engines 
 ### FFT Spectrum Band 700M:
 This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
 
+
+##Proposed ANN algorithm
+![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
 # TODO:
 1. Design our model (MLP-Multi Layer Percetron) which add the cognition feature to the Secondry users.
