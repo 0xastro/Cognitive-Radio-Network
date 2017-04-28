@@ -17,8 +17,8 @@ This Template compine a brief description of how to construct and build engines 
 
 ### FFT Spectrum Band 700M:
 This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
-
-
+hint: the compiled version of uhd_fft is generally better 
+as it cones with command line argument option to configure the center freq, bandwidth and gain
 ##Proposed ANN algorithm
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
