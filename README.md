@@ -22,7 +22,6 @@ This is designed to be executed on the USRP node which is responsible for Monito
 hint: the compiled version of uhd_fft is generally better 
 as it comes with command line arguments option to configure the center freq, bandwidth and gain but we it always hanging and not responding as it launched on WX-GUI so we will develop our own vesion based on QT-GUI.
 
-##Proposed ANN algorithm
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
 # TODO:
