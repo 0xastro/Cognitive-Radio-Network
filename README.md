@@ -40,18 +40,18 @@ as it comes with command line arguments option to configure the center freq, ban
   
   
     
-##This project is Delievered as a Undergraduate Thesis in Canadian International College -CIC-
-#######ADDED
+## This project is Delievered as a Undergraduate Thesis in Canadian International College -CIC-
+###### ADDED
 + Presentation of the First Semester progress
 + Documentation of Project
 + Documentation Report includes the theory of CR.
 
-####For any question, contact me:
+#### For any question, contact me:
 * m.rahm7n@gmail.com
 * +20 109 111 4065
 * [facebook](https://www.facebook.com/mrxastro)
 * [LinkidIn](https://eg.linkedin.com/in/mrastro)
 
 
-#########UPDATE
+##### UPDATE
 I may not be able to integrate the Artificial Inteligent algorithm with the cognitive engine of the SU's, But I am going to design a stand alone version AI in C and train it in offline mode based on the trainig data.
