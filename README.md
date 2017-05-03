@@ -1,9 +1,9 @@
 # Cognitive-Radio-Network
 ## This is an (Undergraduate Thesis) 
 
-This project is Developed under the GNU Radio platform and CRTS 'Cognitive Radio Test System project which is funded By Virginia Tech '.
+This project is Developed under the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts).
+#### ------------------------------------------------Project Scenario-----------------------------------------------------
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/proj_scenario_Ver1.png?raw=true)
-
 
 
 ### Primary Users Engine:
@@ -11,14 +11,17 @@ This engine is dedicated to switch its operational channel by changing its cente
 only 3 states have been specified:
 switching in a fixed pattern between channel_5, channel_4 and channel_3
 or switching between channel_2, channel_1 and channel_0
+1. A new engine will be committed includes hoppoing between 3 channels in a random maner, and where we have 3 Radio Resources(Channels) it gives us 8 possible states as shown:
+![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/CH_States.png?raw=true)
 
 ### Engine Template:
-This Template compine a brief description of how to construct and build engines based on Exensible Cognitive Radio(ECR) which is provided by CRTS and LiquidDSP library for OFDM framing.
+This Template compine a brief description of how to construct and build engines based on Exensible Cognitive Radio(ECR) which is provided by [CRTS](https://github.com/ericps1/crts)and [LiquidDSP](https://github.com/jgaeddert/liquid-dsp) library for Digital Signal Processing and specifically OFDM framing.
 
 ### FFT Spectrum Band 700M:
 This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
 hint: the compiled version of uhd_fft is generally better 
-as it cones with command line argument option to configure the center freq, bandwidth and gain
+as it comes with command line arguments option to configure the center freq, bandwidth and gain but we it always hanging and not responding as it launched on WX-GUI so we will develop our own vesion based on QT-GUI.
+
 ##Proposed ANN algorithm
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
@@ -26,7 +29,7 @@ as it cones with command line argument option to configure the center freq, band
 1. Design our model (MLP-Multi Layer Percetron) which add the cognition feature to the Secondry users.
 2. Generate the Data set which include the main features of the Observed RF   channels[Channel_0,Channel_1,Channel_2,Channel_3,Channel_4,Channel_5]. The Meters/features will be [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
 3. Train our Model to to adjust the proper weights.
-4. Write the MAKE FILE  
+4. Updating the MAKE FILE  
 5. Integrate the System where 5 nodes are involved: [Controller, 2 primary users, 2 secondry users, Spectrum analyzer]
 
 | Hardware        | Software And Tools                      | LAB                             |
