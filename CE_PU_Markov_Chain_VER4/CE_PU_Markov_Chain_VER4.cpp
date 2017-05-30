@@ -2,6 +2,9 @@
  * Author: astro
  * Purpose: Design an engine for primary user (member of the cognitive radio network)
             which is based on markov chain model
+ * implemented as part of undergraduatation thesis at CIC.
+ * email: m.rahm7n@gmail.com.  abdelrahman_sayed@cic-cairo.com 
+ * Blog: https://astro0blog.wordpress.com
  * Language:  C/C++
  * Program subroutine:
 
