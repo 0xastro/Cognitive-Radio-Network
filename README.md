@@ -3,7 +3,9 @@
 
 This project is Developed under the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts).
 #### ------------------------------------------------Project Scenario-----------------------------------------------------
-![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/FINAL_SCENARIO.png?raw=true)
+<p align="center">
+  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/FINAL_SCENARIO.png?raw=true"/>
+</p>
 
 
 ### Primary Users Engine:
