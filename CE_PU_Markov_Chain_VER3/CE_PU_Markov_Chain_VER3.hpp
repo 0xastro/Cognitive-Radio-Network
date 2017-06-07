@@ -8,9 +8,9 @@
 #include "timer.h"
 
 //#define STATES 3
-#define CH_1 222e6
-#define CH_2 333e6
-#define CH_3 444e6
+#define CH_1 833e6
+#define CH_2 836e6
+#define CH_3 838e6
 
 
 
