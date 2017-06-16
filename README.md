@@ -13,9 +13,9 @@ This engine is dedicated to switch its operational channel by changing its cente
 only 3 states have been specified:
 switching in a fixed pattern between channel_5, channel_4 and channel_3
 or switching between channel_2, channel_1 and channel_0
-1. A new engine will be committed includes hoppoing between 3 channels in a random maner, and where we have 3 Radio Resources(Channels) it gives us 8 possible states as shown:
+1. A new engine is committed includes hoppoing between 3 channels in a random maner based on MARKOV chain, and where we have 3 Radio Resources(Channels) it gives us 8 possible states as shown:
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/CH_States.png?raw=true)
-
+1.1.1 CE_PU_Markov_Chain_VER4 make channel selection based on users inputs where the engine asks user to enter the 3 channels values
 ### Engine Template:
 This Template compine a brief description of how to construct and build engines based on Exensible Cognitive Radio(ECR) which is provided by [CRTS](https://github.com/ericps1/crts)and [LiquidDSP](https://github.com/jgaeddert/liquid-dsp) library for Digital Signal Processing and specifically OFDM framing.
 
@@ -23,6 +23,12 @@ This Template compine a brief description of how to construct and build engines 
 This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
 hint: the compiled version of uhd_fft is generally better 
 as it comes with command line arguments option to configure the center freq, bandwidth and gain but we it always hanging and not responding as it launched on WX-GUI so we will develop our own vesion based on QT-GUI.
+
+### DATA SET
+Data Set is based on extracting the features from the RF channel, where about 400 examples are produced under prescence of channel usage based on PU activity in the channel-will be updated asap-.
+<p align="center">
+  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/DATA_SET.png?raw=true"/>
+</p>
 
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
