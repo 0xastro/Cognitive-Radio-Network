@@ -356,26 +356,14 @@ void ExtensibleCognitiveRadio::set_ce(char *ce, int argc, char **argv) {
   // EDIT SET CE START FLAG
   if(!strcmp(ce, "CE_Template"))
     CE = new CE_Template(argc, argv, this);
-  if(!strcmp(ce, "CE_Subcarrier_Alloc"))
-    CE = new CE_Subcarrier_Alloc(argc, argv, this);
-  if(!strcmp(ce, "CE_Throughput_Test"))
-    CE = new CE_Throughput_Test(argc, argv, this);
-  if(!strcmp(ce, "CE_Control_and_Feedback_Test"))
-    CE = new CE_Control_and_Feedback_Test(argc, argv, this);
-  if(!strcmp(ce, "CE_Simultaneous_RX_And_Sensing"))
-    CE = new CE_Simultaneous_RX_And_Sensing(argc, argv, this);
-  if(!strcmp(ce, "CE_Two_Channel_DSA_Spectrum_Sensing"))
-    CE = new CE_Two_Channel_DSA_Spectrum_Sensing(argc, argv, this);
-  if(!strcmp(ce, "CE_Mod_Adaptation"))
-    CE = new CE_Mod_Adaptation(argc, argv, this);
-  if(!strcmp(ce, "CE_Network_Loading"))
-    CE = new CE_Network_Loading(argc, argv, this);
-  if(!strcmp(ce, "CE_FEC_Adaptation"))
-    CE = new CE_FEC_Adaptation(argc, argv, this);
-  if(!strcmp(ce, "CE_Two_Channel_DSA_Link_Reliability"))
-    CE = new CE_Two_Channel_DSA_Link_Reliability(argc, argv, this);
-  if(!strcmp(ce, "CE_Two_Channel_DSA_PU"))
-    CE = new CE_Two_Channel_DSA_PU(argc, argv, this);
+  if(!strcmp(ce, "CE_TX_CHANNEL_X"))
+    CE = new CE_TX_CHANNEL_X(argc, argv, this);
+  if(!strcmp(ce, "CE_Random_Behaviour_PU"))
+    CE = new CE_Random_Behaviour_PU(argc, argv, this);
+  if(!strcmp(ce, "CE_PU_MARKOV_Chain_Tx"))
+    CE = new CE_PU_MARKOV_Chain_Tx(argc, argv, this);
+  if(!strcmp(ce, "CE_Predictive_Node"))
+    CE = new CE_Predictive_Node(argc, argv, this);
   // EDIT SET CE END FLAG
   ///@endcond
 }
