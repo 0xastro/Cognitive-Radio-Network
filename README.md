@@ -40,29 +40,54 @@ python spectrum_analyzer.py
 
 <p align="center">
 
-## [![Watch the video] https://youtu.be/QdT6wcxbOYQ For Demonstration
+## [Watch the video] https://youtu.be/QdT6wcxbOYQ For Demonstration :+1:
 
 </p>
 
 
 #### ------------------------------------------------Project Scenario--------------------------------------------------
 <p align="center">
-  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/FINAL_SCENARIO.png?raw=true"/>
+  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/demo.png?raw=true"/>
 </p>
 
 
-### Primary Users Engine:
-This engine is dedicated to switch its operational channel by changing its center frequency:  fc.
-only 3 states have been specified:
-switching in a fixed pattern between channel_5, channel_4 and channel_3
-or switching between channel_2, channel_1 and channel_0
-1. A new engine is committed includes hoppoing between 3 channels in a random maner based on MARKOV chain, and where we have 3 Radio Resources(Channels) it gives us 8 possible states as shown:
-![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/CH_States.png?raw=true)
-1.1.1 CE_PU_Markov_Chain_VER4 make channel selection based on users inputs where the engine asks user to enter the 3 channels values
-### Engine Template:
+## Primary Users Engines:
+### 1. ```CE_PU_MARKOV_Chain_Tx```
+
+This engine is dedicated to switch its operational channel by changing its center frequency/hoppoing between 3 channels in a random maner based on MARKOV chain.
+![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/CH_States.png?raw=true)
+where the PU change the Center Frequency according to the the given probability[1].
+[1]
+
+                  |               | CHANNEL 1           | CHANNEL 2          | CHANNEL 3        |
+                  |---------------|:-------------------:|:------------------:|:----------------:|
+                  |CHANNEL 1      | P(CH_1/CH_1)= 0.1   | P(CH_1/CH_2)=0.3   | P(CH_1/CH_3)=0.6 |
+                  |CHANNEL 1      | P(CH_2/CH_1)= 0.1   | P(CH_2/CH_2)=0.5   | P(CH_2/CH_3)=0.4 |
+                  |CHANNEL 1      | P(CH_3/CH_1)= 0.1   | P(CH_3/CH_2)=0.2   | P(CH_3/CH_3)=0.7 |             
+
+
+The implementation uses 2 member function:
+``` C++
+1. RANDOM_OUTOCME(ECR);   //for generating the random variable from a uniform distribution
+2. PU_TX_Behaviour(ECR);        //for selecting the channel according the given probabilities 
+```
+CE-Document and sample output:
+[Primary user Engine.pdf](https://github.com/ericps1/crts/files/1082167/Primary.user.Engine.pdf)
+
+### 2. ```CE_Random_Behaviour_PU```
+
+This engine generates a random channel to operate on it **_[CHANNEL1, CHANNEL2, CHANNEL3]_** without any predetermined probabilities using the standard rand() method for generating random integers and then divides by the maximum number that can be generated which is 3.
+
+## Cognitive/Secondary Users Engines:
+
+### ```CE_Predictive_Node```
+This engine is based on Neural Network, it senses 3 channels simultenously at the spectrum Band 800MHz at _**fc**_=833e6 and _**B.W**_=13e6, then pass the measured features to the Neural Network to make a prediction indicates channels status.
+
+## Engine Template:
+### ```CE_Template```
 This Template compine a brief description of how to construct and build engines based on Exensible Cognitive Radio(ECR) which is provided by [CRTS](https://github.com/ericps1/crts)and [LiquidDSP](https://github.com/jgaeddert/liquid-dsp) library for Digital Signal Processing and specifically OFDM framing.
 
-### FFT Spectrum Band 700M:
+## ```spectrum_analyzer.py Band 800M```  script:
 This is designed to be executed on the USRP node which is responsible for Monitoring the proper RF spectrum.
 hint: the compiled version of uhd_fft is generally better 
 as it comes with command line arguments option to configure the center freq, bandwidth and gain but we it always hanging and not responding as it launched on WX-GUI so we will develop our own vesion based on QT-GUI.
@@ -76,11 +101,10 @@ Data Set is based on extracting the features from the RF channel, where about 40
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
 
 # TODO:
-1. Design our model (MLP-Multi Layer Percetron) which add the cognition feature to the Secondry users.
-2. Generate the Data set which include the main features of the Observed RF   channels[Channel_0,Channel_1,Channel_2,Channel_3,Channel_4,Channel_5]. The Meters/features will be [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
-3. Train our Model to to adjust the proper weights.
-4. Updating the MAKE FILE  
-5. Integrate the System where 5 nodes are involved: [Controller, 2 primary users, 2 secondry users, Spectrum analyzer]
+1. Design The reciever for both PU and SU to measure and evaluate the performance
+2. Add the Neural Net Model source code.
+3. Add the Data set which include the main features of the Observed RF channels[Channel_1,Channel_2,Channel_3]. based on the feature vector [CH1Power,CH2Power,CH3Power,NoiseFloor]
+4. Add A new cognitive engine for channel estimation where I have to generate new data to include the following Meters/features [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
 
 | Hardware        | Software And Tools                      | LAB                             |
 | --------------- |:---------------------------------------:|:-------------------------------:|
@@ -93,16 +117,13 @@ Data Set is based on extracting the features from the RF channel, where about 40
     
 ## This project is Delievered as a Undergraduate Thesis in Canadian International College -CIC-
 ###### ADDED
-+ Presentation of the First Semester progress
++ Predictive scenario involving 2 nodes Demo 
 + Documentation of Project
-+ Documentation Report includes the theory of CR.
 
 #### For any question, contact me:
 * m.rahm7n@gmail.com
+* abdelrahman_sayed@cic-cairo.com
 * +20 109 111 4065
 * [facebook](https://www.facebook.com/mrxastro)
 * [LinkidIn](https://eg.linkedin.com/in/mrastro)
 
-
-##### UPDATE
-I may not be able to integrate the Artificial Inteligent algorithm with the cognitive engine of the SU's, But I am going to design a stand alone version AI in C and train it in offline mode based on the trainig data.
