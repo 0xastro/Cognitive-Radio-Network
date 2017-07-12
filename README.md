@@ -98,7 +98,7 @@ Data Set is based on extracting the features from the RF channel, where about 40
   <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/DATA_SET.png?raw=true"/>
 </p>
 
-![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
+![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/ann2.png?raw=true)
 
 # TODO:
 1. Design The reciever for both PU and SU to measure and evaluate the performance
