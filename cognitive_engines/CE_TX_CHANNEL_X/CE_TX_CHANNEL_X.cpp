@@ -14,7 +14,7 @@ void CE_TX_CHANNEL_X::execute() {
 
   ECR->stop_rx();
   if (!Channel_Specified){
-  	ECR->stop_tx()
+  	ECR->stop_tx();
 	printf("Desired Tx Channel:\t");
 	scanf("%f",&DESIRED_CHANNEL);
 	Channel_Specified=1;
