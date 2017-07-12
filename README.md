@@ -95,7 +95,7 @@ as it comes with command line arguments option to configure the center freq, ban
 ### DATA SET
 Data Set is based on extracting the features from the RF channel, where about 400 examples are produced under prescence of channel usage based on PU activity in the channel-will be updated asap-.
 <p align="center">
-  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/DATA_SET.png?raw=true"/>
+  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/DATA_SET.png?raw=true"/>
 </p>
 
 ![alt tag](https://github.com/astro7x/Cognitive-Radio-Network/blob/master/ann.png?raw=true)
