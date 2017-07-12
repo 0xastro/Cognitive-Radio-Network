@@ -12,13 +12,13 @@ CE_TX_CHANNEL_X::~CE_TX_CHANNEL_X() {}
 // execute function
 void CE_TX_CHANNEL_X::execute() {
 
-  ECR->stop_rx_freq();
+  ECR->stop_rx();
   if (!Channel_Specified){
-  	ECR->stop_tx_freq()
+  	ECR->stop_tx()
 	printf("Desired Tx Channel:\t");
 	scanf("%f",&DESIRED_CHANNEL);
 	Channel_Specified=1;
-	ECR->start_tx_freq();
+	ECR->start_tx();
 	}
     printf("Transmit frequency: %f\n", ECR->get_tx_freq());
 }
