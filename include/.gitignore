@@ -1,0 +1,5 @@
+# Ignore VIM swap files
+*.swp
+*.swo
+
+
