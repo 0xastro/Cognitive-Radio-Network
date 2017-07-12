@@ -1,7 +1,14 @@
 # Cognitive-Radio-Network
-## This is an (Undergraduate Thesis) 
+## (Undergraduate Thesis) 
 
 This project is Developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Test Bed.
+
+# Installation {#Installation}
+## Dependencies {#Dependencies}
+
+- [UHD Version 3.8.4](https://files.ettus.com/manual/page_build_guide.html)
+- [liquid-dsp](http://liquidsdr.org/doc/installation/)
+- [libconfig-dev](https://packages.ubuntu.com/xenial/libdevel/libconfig-dev)
 
 ## How to Build
 ```Shell
