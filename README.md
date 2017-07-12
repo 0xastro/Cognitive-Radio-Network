@@ -4,15 +4,17 @@
 This project is Developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Test Bed.
 
 ## How to Build
+```Shell
 1. git clone https://github.com/astro7x/Cognitive-Radio-Network.git
 2. cd Cognitive-Radio-Network
 3. make
+```
 
 ## How to Run
 ### to run the predictive scenario on CORNET platform
 1. open a remote connection to port 7032, 7033, 7034 and 7035
 
-```
+```Shell
 ssh -v -p 7032 <usr_name>@128.173.221.40 
 ssh -v -p 7033 <usr_name>@128.173.221.40 
 ssh -v -p 7034 <usr_name>@128.173.221.40 
@@ -20,21 +22,27 @@ ssh -v -p 7035 <usr_name>@128.173.221.40 -XC //for Forwarding Display in a compr
 
 ```
 2. on port 7035 run 
-```
+```Shell
 python spectrum_analyzer.py
 ```
 3. on port 7032 run 
-```
+```Shell
 ./crts_controller -m
 ```
 4. on port 7033 run 
-```
+```Shell
 ./crts_cognitive_radio -a <controller_ip_address>
 ```
 5. on port 7034 run 
-```
+```Shell
 ./crts_cognitive_radio -a <controller_ip_address>
 ```
+
+<p align="center">
+
+## [![Watch the video] https://youtu.be/QdT6wcxbOYQ For Demonstration
+
+</p>
 
 
 #### ------------------------------------------------Project Scenario--------------------------------------------------
