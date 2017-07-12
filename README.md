@@ -16,7 +16,7 @@ This project is Developed based on the [GNU Radio](https://github.com/gnuradio/g
 ssh -v -p 7032 <usr_name>@128.173.221.40 
 ssh -v -p 7033 <usr_name>@128.173.221.40 
 ssh -v -p 7034 <usr_name>@128.173.221.40 
-ssh -v -p 7035 <usr_name>@128.173.221.40 -XC //for FFT plotting
+ssh -v -p 7035 <usr_name>@128.173.221.40 -XC //for Forwarding Display in a compressed mode
 
 ```
 2. on port 7035 run 
