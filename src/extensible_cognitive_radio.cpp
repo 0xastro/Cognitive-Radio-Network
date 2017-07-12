@@ -24,16 +24,12 @@
 
 // EDIT INCLUDE START FLAG
 #include "../cognitive_engines/CE_Template/CE_Template.hpp"
-#include "../cognitive_engines/test_engines/CE_Subcarrier_Alloc/CE_Subcarrier_Alloc.hpp"
-#include "../cognitive_engines/test_engines/CE_Throughput_Test/CE_Throughput_Test.hpp"
-#include "../cognitive_engines/test_engines/CE_Control_and_Feedback_Test/CE_Control_and_Feedback_Test.hpp"
-#include "../cognitive_engines/test_engines/CE_Simultaneous_RX_And_Sensing/CE_Simultaneous_RX_And_Sensing.hpp"
-#include "../cognitive_engines/example_engines/CE_Two_Channel_DSA_Spectrum_Sensing/CE_Two_Channel_DSA_Spectrum_Sensing.hpp"
-#include "../cognitive_engines/example_engines/CE_Mod_Adaptation/CE_Mod_Adaptation.hpp"
-#include "../cognitive_engines/example_engines/CE_Network_Loading/CE_Network_Loading.hpp"
-#include "../cognitive_engines/example_engines/CE_FEC_Adaptation/CE_FEC_Adaptation.hpp"
-#include "../cognitive_engines/example_engines/CE_Two_Channel_DSA_Link_Reliability/CE_Two_Channel_DSA_Link_Reliability.hpp"
-#include "../cognitive_engines/primary_user_engines/CE_Two_Channel_DSA_PU/CE_Two_Channel_DSA_PU.hpp"
+#include "../cognitive_engines/CE_TX_CHANNEL_X/CE_TX_CHANNEL_X.hpp"
+#include "../cognitive_engines/CE_Random_Behaviour_PU/CE_Random_Behaviour_PU.hpp"
+#include "../cognitive_engines/CE_PU_MARKOV_Chain_Tx/CE_PU_MARKOV_Chain_Tx.hpp"
+#include "../cognitive_engines/CE_Predictive_Node/CE_Predictive_Node.hpp"
+
+
 // EDIT INCLUDE END FLAG
 
 #define DEBUG 0
