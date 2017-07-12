@@ -1,10 +1,45 @@
 # Cognitive-Radio-Network
 ## This is an (Undergraduate Thesis) 
 
-This project is Developed under the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts).
-#### ------------------------------------------------Project Scenario-----------------------------------------------------
+This project is Developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Test Bed.
+
+## How to Build
+1. git clone https://github.com/astro7x/Cognitive-Radio-Network.git
+2. cd Cognitive-Radio-Network
+3. make
+
+## How to Run
+### to run the predictive scenario on CORNET platform
+1. open a remote connection to port 7032, 7033, 7034 and 7035
+
+```
+ssh -v -p 7032 <usr_name>@128.173.221.40 
+ssh -v -p 7033 <usr_name>@128.173.221.40 
+ssh -v -p 7034 <usr_name>@128.173.221.40 
+ssh -v -p 7035 <usr_name>@128.173.221.40 -XC //for FFT plotting
+
+```
+2. on port 7035 run 
+```
+python spectrum_analyzer.py
+```
+3. on port 7032 run 
+```
+./crts_controller -m
+```
+4. on port 7033 run 
+```
+./crts_cognitive_radio -a <controller_ip_address>
+```
+5. on port 7034 run 
+```
+./crts_cognitive_radio -a <controller_ip_address>
+```
+
+
+#### ------------------------------------------------Project Scenario--------------------------------------------------
 <p align="center">
-  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/FINAL_SCENARIO.png?raw=true"/>
+  <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/FINAL_SCENARIO.png?raw=true"/>
 </p>
 
 
