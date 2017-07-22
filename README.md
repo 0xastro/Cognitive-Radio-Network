@@ -113,9 +113,12 @@ Data Set is based on extracting the features from the RF channel, where about 40
 
 # TODO:
 1. Design The reciever for both PU and SU to measure and evaluate the performance
-2. Add the Neural Net Model source code.
-3. Add the Data set which include the main features of the Observed RF channels[Channel_1,Channel_2,Channel_3]. based on the feature vector [CH1Power,CH2Power,CH3Power,NoiseFloor]
-4. Add A new cognitive engine for channel estimation where I have to generate new data to include the following Meters/features [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
+2. Add the new scenario which responsible for exploiting the predicted gaps/White spaces
+DSA Demo: https://youtu.be/kLeB12A2Ypw
+3. Add the Neural Net Model source code.
+4. Add the Data set which include the main features of the Observed RF channels[Channel_1,Channel_2,Channel_3]. based on the feature vector [CH1Power,CH2Power,CH3Power,NoiseFloor]
+5. Add A new cognitive engine for channel estimation where I have to generate new data to include the following Meters/features [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
+
 
 | Hardware        | Software And Tools                      | LAB                             |
 | --------------- |:---------------------------------------:|:-------------------------------:|
