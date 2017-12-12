@@ -1,0 +1,13 @@
+diff --git a/src/math/src/poly.findroots.c b/src/math/src/poly.findroots.c
+index a8042b1..042b029 100644
+--- a/src/math/src/poly.findroots.c
++++ b/src/math/src/poly.findroots.c
+@@ -299,7 +299,7 @@ void POLY(_findroots_bairstow_recursion)(T *          _p,
+ #endif
+ 
+         // adjust u, v
+-        if (isnan(du) || isnan(dv)) {
++        if (isnan(crealf(du+dv)) || isnan(cimagf(du+dv)) ) {
+             u *= 0.5f;
+             v *= 0.5f;
+         } else {
