@@ -131,7 +131,7 @@ DSA Demo: https://youtu.be/kLeB12A2Ypw
   
   
     
-## This project is Delievered as a Undergraduate Thesis in Canadian International College -CIC-
+## This project is Delievered as a Graduation Thesis to Canadian International College -CIC-
 ###### ADDED
 + Predictive scenario involving 2 nodes Demo 
 + Documentation of Project
