@@ -10,6 +10,8 @@ This project is Developed based on the [GNU Radio](https://github.com/gnuradio/g
 - [liquid-dsp](http://liquidsdr.org/doc/installation/)
 - [libconfig-dev](https://packages.ubuntu.com/xenial/libdevel/libconfig-dev)
 
+[FOR DEPENDENCIES REFERENCE SETUP](https://github.com/astro7x/Cognitive-Radio-Network/tree/master/HardwareSetup)
+
 ## How to Build
 ```Shell
 1. git clone https://github.com/astro7x/Cognitive-Radio-Network.git
