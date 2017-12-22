@@ -1,5 +1,5 @@
 # Cognitive-Radio-Network
-## (Undergraduate Thesis) 
+## (Graduation Thesis) 
 
 This project is Developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Test Bed.
 
