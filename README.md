@@ -1,7 +1,6 @@
 # Cognitive-Radio-Network
-## (Graduation Thesis) 
 
-This project is Developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Test Bed.
+This project was developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Testbed.
 
 # Installation {#Installation}
 ## Dependencies {#Dependencies}
@@ -102,7 +101,7 @@ hint: the compiled version of uhd_fft is generally better
 as it comes with command line arguments option to configure the center freq, bandwidth and gain but we it always hanging and not responding as it launched on WX-GUI so we will develop our own vesion based on QT-GUI.
 
 ### DATA SET
-Data Set is based on extracting the features from the RF channel, where about 400 examples are produced under prescence of channel usage based on PU activity in the channel-will be updated asap-.
+Data Set is based on extracting the features from the RF channel, where about 400 examples are produced under prescence of channel usage based on PU activity in the channels.
 <p align="center">
   <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/DATA_SET.png?raw=true"/>
 </p>
@@ -112,14 +111,6 @@ Data Set is based on extracting the features from the RF channel, where about 40
   <img src="https://github.com/astro7x/Cognitive-Radio-Network/blob/master/pics/ann2.png?raw=true"/>
 
 </p>
-
-# TODO:
-1. Design The reciever for both PU and SU to measure and evaluate the performance
-2. Add the new scenario which responsible for exploiting the predicted gaps/White spaces
-DSA Demo: https://youtu.be/kLeB12A2Ypw
-3. Add the Neural Net Model source code.
-4. Add the Data set which include the main features of the Observed RF channels[Channel_1,Channel_2,Channel_3]. based on the feature vector [CH1Power,CH2Power,CH3Power,NoiseFloor]
-5. Add A new cognitive engine for channel estimation where I have to generate new data to include the following Meters/features [RSSI, EVM, PSD, NOISE FLOOR, BER, PER]
 
 
 | Hardware        | Software And Tools                      | LAB                             |
@@ -132,14 +123,6 @@ DSA Demo: https://youtu.be/kLeB12A2Ypw
   
     
 ## This project is Delievered as a Graduation Thesis to Canadian International College -CIC-
-###### ADDED
-+ Predictive scenario involving 2 nodes Demo 
-+ Documentation of Project
+Code is merged to [crts repository](https://github.com/ericps1/crts)
 
-#### For any question, contact me:
-* m.rahm7n@gmail.com
-* abdelrahman_sayed@cic-cairo.com
-* +20 109 111 4065
-* [facebook](https://www.facebook.com/mrxastro)
-* [LinkidIn](https://eg.linkedin.com/in/mrastro)
 
