@@ -2,8 +2,8 @@
 
 This project was developed based on the [GNU Radio](https://github.com/gnuradio/gnuradio) and [CRTS-Cognitive Radio Test System](https://github.com/ericps1/crts). Under CORNET Testbed.
 
-# Installation {#Installation}
-## Dependencies {#Dependencies}
+# Installation 
+## Dependencies 
 
 - [UHD Version 3.8.4](https://files.ettus.com/manual/page_build_guide.html)
 - [liquid-dsp](http://liquidsdr.org/doc/installation/)
@@ -48,7 +48,7 @@ python spectrum_analyzer.py
 
 <p align="center">
 
-## [Watch the video] https://youtu.be/QdT6wcxbOYQ For Demonstration :+1:
+## [Watch the video] https://youtu.be/QdT6wcxbOYQ for demonstration:
 
 </p>
 
