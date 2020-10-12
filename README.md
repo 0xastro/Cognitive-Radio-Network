@@ -126,3 +126,9 @@ Data Set is based on extracting the features from the RF channel, where about 40
 Code is merged to [crts repository](https://github.com/ericps1/crts)
 
 
+## Citation
+
+> Real-Time Spectrum Occupancy Prediction
+
+https://link.springer.com/chapter/10.1007%2F978-3-030-11437-4_17
+
